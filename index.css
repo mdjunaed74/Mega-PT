@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-ink-950 text-zinc-200 antialiased; }
+@layer components {
+  .glass { @apply rounded-2xl border border-gold-500/15 bg-ink-800/60 backdrop-blur-md; }
+  .btn-gold { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-gold-400 to-gold-600 px-5 py-3 font-semibold text-ink-950 shadow-[0_0_24px_-6px_rgba(224,169,35,.6)] transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-300 disabled:opacity-50; }
+  .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-gold-500/30 px-4 py-2 text-sm text-gold-300 transition hover:bg-gold-500/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold-300 disabled:opacity-50; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
